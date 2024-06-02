@@ -1,0 +1,10 @@
+f=open("names.txt")
+for i in f:
+    b=i
+b=b.split(",")
+for i in range(0,len(b)):
+    b[i]=b[i].rstrip('"')
+    b[i]=b[i].lstrip('"')
+b.sort()
+print b[937]
+
